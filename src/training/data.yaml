@@ -1,0 +1,10 @@
+path:                #set the path here to the results dir created in prepreocessing
+train: train/images  
+val: valid/images    
+
+# Class encodings - set these to your own class names as before
+names:
+  0: Defect
+  1: Swelling
+  2: Vesicle
+
