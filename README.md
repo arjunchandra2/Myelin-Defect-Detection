@@ -1,16 +1,19 @@
-# Defect-Detection
+# Accelerating Myelin Defect Detection in Neurodegenerative Disorders: A Human-in-the-Loop Deep Learning Approach with Birefringence Microscopy
 
 ## Overview 
-This repository hosts the code to train YOLOv8 for myelin defect detection.
+This repository hosts the code to train YOLOv8 for myelin defect detection using birefringence microscopy. The full human-in-the-loop workflow of our method is shown below from tissue preparation to final analysis.
 
-[Some figure here]
+![Overview](assets/overview.png)
+
 
 ## Data
-Will be uploaded to Roboflow soon. Will also need to update preprocessing section (maybe it can be skipped?) if the data is downloaded directly from Roboflow in YOLO format. 
+Will be uploaded to Roboflow. Will also need to update preprocessing section (maybe it can be skipped?) if the data is downloaded directly from Roboflow in YOLO format. 
+
+Also need to add a link to annotation GUI or potentially add it into this repo and a note about using it to annotate your own data. 
 
 
 ## Best Models 
-To check out our best models, you can find the model weights in the `models` directory. It contains the following models: 
+To check out our best models, you can find the model weights in the `models` directory. It contains the following models along with their associated hyperparameter configuration files: 
 - `best_rgb.pt`: Best model trained on 8-bit RGB images.
 - `best_grayscale.py`: Best model trained on 8-bit RGB images converted to grayscale by applying (R,G,B) $\rightarrow$ (G,G,G).
 
