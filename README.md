@@ -7,9 +7,9 @@ This repository hosts the code to train YOLOv8 for myelin defect detection using
 
 
 ## Data
-Will be uploaded to Roboflow. Will also need to update preprocessing section (maybe it can be skipped?) if the data is downloaded directly from Roboflow in YOLO format. 
+You can view and download our dataset at [Roboflow link]. *Will also need to update preprocessing section (maybe it can be skipped?) if the data is downloaded directly from Roboflow in YOLO format. 
 
-Also need to add a link to annotation GUI or potentially add it into this repo and a note about using it to annotate your own data. 
+If you are annotating your own volumetric imaging, you can use our annotation software located in the `annotation` directory. This will ensure your annotations are compatible with the preprocessing and training scripts. You can run the software using MATLAB R2024a.
 
 
 ## Best Models 
