@@ -7,9 +7,9 @@ This repository hosts the code to train YOLOv8 for myelin defect detection using
 
 
 ## Data
-You can view and download our dataset at [Roboflow link]. *Will also need to update preprocessing section (maybe it can be skipped?) if the data is downloaded directly from Roboflow in YOLO format. 
+You can view and download our dataset on Roboflow [here](https://universe.roboflow.com/defecttraining/myelin-defect-detection-s89w2). You should download the dataset in YOLOv8 format. 
 
-If you are annotating your own volumetric imaging, you can use our annotation software located in the `annotation` directory. This will ensure your annotations are compatible with the preprocessing and training scripts. You will need to use [MATLAB R2024a](https://www.mathworks.com/products/new_products/release2024a.html) to run the software.
+If you are annotating your own volumetric imaging, you can use our custom annotation software located in the `annotation` directory. This will ensure your annotations are compatible with the preprocessing and training scripts. You will need to use [MATLAB R2024a](https://www.mathworks.com/products/new_products/release2024a.html) to run the software.
 
 
 ## Best Models 
@@ -17,7 +17,7 @@ To check out our best models, you can find the model weights in the `models` dir
 - `best_rgb.pt`: Best model trained on 8-bit RGB images.
 - `best_grayscale.py`: Best model trained on 8-bit RGB images converted to grayscale by applying (R,G,B) $\rightarrow$ (G,G,G).
 
-You can then skip directly to the [inference section](#inference) to run inference with the models. 
+You can then perform the initial setup and jump to the [inference](#inference) section to run inference with the models. 
 
 
 ## Usage 
